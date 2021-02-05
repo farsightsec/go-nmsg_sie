@@ -1,0 +1,33 @@
+syntax = "proto2";
+package nmsg.sie;
+option go_package = "github.com/farsightsec/go-nmsg_sie;nmsg_sie";
+
+enum DnsDedupeType {
+    INSERTION = 0;
+    EXPIRATION = 1;
+    CHAFF = 2;
+    AUTHORITATIVE = 3;
+    MERGED = 4;
+    MERGED_AUTHORITATIVE = 5;
+    MERGED_INSERTION = 6;
+}
+
+message DnsDedupe {
+    optional DnsDedupeType  type = 13;
+    optional uint32         count = 10;
+    optional uint32         time_first = 11;
+    optional uint32         time_last = 12;
+    optional uint32         zone_time_first = 17;
+    optional uint32         zone_time_last = 18;
+    optional bytes          response_ip = 14;
+
+    optional bytes          rrname = 1;
+    optional uint32         rrtype = 2;
+    optional uint32         rrclass = 3;
+    optional uint32         rrttl = 4;
+    repeated bytes          rdata = 5;
+
+    optional bytes          response = 15;
+
+    optional bytes          bailiwick = 16;
+}

@@ -1,0 +1,10 @@
+syntax = "proto2";
+package nmsg.sie;
+option go_package = "github.com/farsightsec/go-nmsg_sie;nmsg_sie";
+
+message Delay {
+    required bytes          query_ip = 1;
+    required bytes          response_ip = 2;
+    required double         delay = 3;
+    required int64          response_time_sec = 4;
+}

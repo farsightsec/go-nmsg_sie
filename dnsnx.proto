@@ -1,0 +1,13 @@
+syntax = "proto2";
+package nmsg.sie;
+option go_package = "github.com/farsightsec/go-nmsg_sie;nmsg_sie";
+
+message DnsNX {
+    required bytes          qname = 1;
+    required uint32         qtype = 2;
+    required uint32         qclass = 3;
+    required bytes          response_ip = 4;
+    optional bytes          soa_rrname = 5;
+    optional int64          response_time_sec = 6;
+    optional sfixed32       response_time_nsec = 7;
+}
