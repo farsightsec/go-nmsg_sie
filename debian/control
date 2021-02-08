@@ -3,7 +3,8 @@ Section: net
 Priority: optional
 Maintainer: Farsight Security, Inc. <software@farsightsecurity.com>
 Build-Depends: debhelper (>= 9), dh-golang, golang-1.11-go,
- golang-google-protobuf-dev
+ golang-google-protobuf-dev,
+ golang-github-farsightsec-go-nmsg-dev
 Standards-Version: 3.9.8
 Vcs-Git: https://github.com/farsightsec/go-nmsg.git
 Vcs-Browser: https://github.com/farsightsec/go-nmsg_sie
