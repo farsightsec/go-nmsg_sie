@@ -1,4 +1,4 @@
-go-nmsg (0.1.0-1) debian-farsightsec; urgency=medium
+go-nmsg-sie (0.1.0-1) debian-farsightsec; urgency=medium
 
   * Initial public release.
 
