@@ -12,5 +12,9 @@ XS-Go-Import-Path: github.com/farsightsec/go-nmsg_sie
 
 Package: golang-github-farsightsec-go-nmsg-sie-dev
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ golang-google-protobuf-dev,
+ golang-github-farsightsec-go-nmsg-dev
 Description: go-nmsg module for nmsg.sie message types
+ This module provides definitions for message types from sie-nmsg for
+ use with the go-nmsg library.
