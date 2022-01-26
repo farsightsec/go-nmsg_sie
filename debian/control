@@ -1,0 +1,20 @@
+Source: go-nmsg-sie
+Section: net
+Priority: optional
+Maintainer: Farsight Security, Inc. <software@farsightsecurity.com>
+Build-Depends:
+ debhelper (>= 11~),
+ dh-golang,
+ golang-1.18-go,
+ golang-github-farsightsec-go-nmsg-dev,
+ golang-google-protobuf-dev,
+Standards-Version: 3.9.8
+Homepage: https://www.farsightsecurity.com
+XS-Go-Import-Path: github.com/farsightsec/go-nmsg_sie
+
+Package: golang-github-farsightsec-go-nmsg-sie-dev
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: SIE message types for go-nmsg library
+ Provides definitions for message types from sie-nmsg for use with the
+ go-nmsg library.
