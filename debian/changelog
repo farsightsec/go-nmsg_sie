@@ -1,4 +1,4 @@
-go-nmsg-sie (0.1.1) debian-fsi; urgency=medium
+go-nmsg-sie (0.1.1-1) debian-fsi; urgency=medium
 
   * Initial release.
 
