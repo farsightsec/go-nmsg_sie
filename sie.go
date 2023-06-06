@@ -19,6 +19,7 @@ func (p *QR) GetMsgtype() uint32         { return 3 }
 func (p *Reputation) GetMsgtype() uint32 { return 2 }
 
 func init() {
+	nmsg.RegisterVendor("sie", 2)
 	nmsg.Register(&Delay{})
 	nmsg.Register(&DnsDedupe{})
 	nmsg.Register(&DnsNX{})
