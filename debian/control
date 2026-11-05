@@ -2,13 +2,14 @@ Source: go-nmsg-sie
 Section: net
 Priority: optional
 Maintainer: DomainTools LLC <software@domaintools.com>
-Build-Depends:
- debhelper (>= 13~),
- debhelper-compat (= 13),
- dh-golang,
- golang-any,
- golang-github-farsightsec-go-nmsg-dev,
- golang-google-protobuf-dev,
+Build-Depends: debhelper (>= 13~),
+               debhelper-compat (= 13),
+               dh-golang,
+               golang-any,
+               golang-github-farsightsec-go-nmsg-dev,
+               golang-google-protobuf-dev,
+               golang-github-pebbe-zmq4-dev,
+               pkg-config
 Standards-Version: 4.5.1
 Homepage: https://www.farsightsecurity.com
 XS-Go-Import-Path: github.com/farsightsec/go-nmsg_sie
