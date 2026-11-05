@@ -1,6 +1,6 @@
-go-nmsg-sie (0.1.2) debian-fsi; urgency=medium
+go-nmsg-sie (0.2.0) debian-fsi; urgency=medium
 
-  * TODO
+  * Register SIE vendor name.
 
  -- DomainTools LLC <software@domaintools.com>  Thu, 11 Sep 2026 12:00:00 -0500
 
