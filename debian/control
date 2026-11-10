@@ -8,10 +8,9 @@ Build-Depends: debhelper (>= 13~),
                golang-any,
                golang-github-farsightsec-go-nmsg-dev,
                golang-google-protobuf-dev,
-               golang-github-pebbe-zmq4-dev,
                pkg-config
 Standards-Version: 4.5.1
-Homepage: https://www.farsightsecurity.com
+Homepage: https://www.domaintools.com
 XS-Go-Import-Path: github.com/farsightsec/go-nmsg_sie
 
 Package: golang-github-farsightsec-go-nmsg-sie-dev

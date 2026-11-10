@@ -1,7 +1,8 @@
 go-nmsg-sie (0.2.0) debian-fsi; urgency=medium
 
   * Register SIE vendor name.
-  * Add ZMQ dependency.
+  * Upgrade to golang v1.25.0.
+  * Upgrade go-nmsg dependency.
 
  -- DomainTools LLC <software@domaintools.com>  Thu, 11 Sep 2026 12:00:00 -0500
 
